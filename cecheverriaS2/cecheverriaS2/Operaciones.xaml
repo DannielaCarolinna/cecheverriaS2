@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cecheverriaS2.Operaciones">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Sistema Calificaciones" FontSize="24" HorizontalTextAlignment="Center" TextColor="Black"/>
+                <Label Text="Momento 1" FontSize="20" HorizontalTextAlignment="Start" TextColor="Black"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Nota Seguimiento" FontSize="18" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtNotaSeguimiento1" Placeholder="Ingrese Seguimiento" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="Nota Examen" FontSize="18" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                    <Entry x:Name="txtNotaExamen1" Placeholder="Ingrese Examen" Grid.Row="1" Grid.Column="1"/>
+                    <Label Text="Nota Momento 1" FontSize="18" HorizontalTextAlignment="Center" TextColor="DarkSalmon" Grid.Row="2" Grid.Column="0"/>
+                    <Entry x:Name="txtResultado1" Placeholder="Resultado" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>
+                    </Grid>
+
+                <Label Text="Momento 2" FontSize="20" HorizontalTextAlignment="Start" TextColor="Black"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Nota Seguimiento" FontSize="18" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtNotaSeguimiento2" Placeholder="Ingrese Seguimiento" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="Nota Examen" FontSize="18" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                    <Entry x:Name="txtNotaExamen2" Placeholder="Ingrese Examen" Grid.Row="1" Grid.Column="1"/>
+                    <Label Text="Nota Momento 2" FontSize="18" HorizontalTextAlignment="Center" TextColor="DarkSalmon" Grid.Row="2" Grid.Column="0"/>
+                    <Entry x:Name="txtResultado2" Placeholder="Resultado" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>
+                    <Button x:Name="btnLimpiar" Text="Limpiar" Clicked="btnLimpiar_Clicked" BackgroundColor="Yellow" Grid.Row="3" Grid.Column="1"/>
+                    <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" BackgroundColor="SeaGreen" Grid.Row="3" Grid.Column="0"/>
+                    <Label Text="Nota Final" FontSize="20" HorizontalTextAlignment="Center" TextColor="DarkRed" Grid.Row="4" Grid.Column="0"/>
+                    <Entry x:Name="txtNotaFinal" Placeholder="Resultado Final" IsReadOnly="True" Grid.Row="4" Grid.Column="1"/>
+                    <Label Text="Estado" FontSize="20" HorizontalTextAlignment="Center" TextColor="DarkRed" Grid.Row="5" Grid.Column="0"/>
+                    <Entry x:Name="txtEstado" Placeholder="Estado Final" IsReadOnly="True" Grid.Row="5" Grid.Column="1"/>
+                </Grid>
+                <Button x:Name="btnCerrar" Text="Cerrar" Clicked="btnCerrar_Clicked" BackgroundColor="Red"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
